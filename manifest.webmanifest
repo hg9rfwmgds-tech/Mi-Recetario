@@ -5,9 +5,9 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f5ef",
-  "theme_color": "#a52e1b",
-  "description": "Recetas personales, fotos optimizadas e ingredientes inteligentes.",
+  "background_color": "#fbf1e4",
+  "theme_color": "#392013",
+  "description": "Mi Recetario: tus platos, ingredientes y recuerdos. Aplicación gratuita que funciona sin conexión.",
   "lang": "es",
   "icons": [
     {

@@ -1,28 +1,20 @@
-# Mi Recetario — paquete para GitHub Pages (versión funcional 1.2)
+# Mi Recetario · v1.3 Diseño Espresso
 
-Este paquete incluye el diseño de icono vintage seleccionado y sus versiones:
-- `icon-192.png`: icono PWA (192 × 192)
-- `icon-512.png`: icono PWA (512 × 512)
-- `icon-maskable-512.png`: icono Android con margen seguro
-- `apple-touch-icon.png`: icono iPhone de 180 × 180
-- `favicon-32.png`: icono de pestaña del navegador
+Interfaz rediseñada según la referencia visual aprobada: fondo crema, barra lateral marrón espresso, tarjetas de ingredientes por secciones, pasos de preparación, etiquetas, notas y utensilios.
 
-Además se incluyen `index.html`, `manifest.webmanifest` y `sw.js`.
+## Instalación en GitHub Pages
+1. **No cambies el nombre del repositorio ni la URL**. Continúa usando `Mi-Recetario` (mayúsculas incluidas).
+2. Sube los archivos **descomprimidos** en la raíz del mismo repositorio, reemplazando los de la versión anterior.
+3. En Settings → Pages mantén `main` y `/(root)`.
+4. En Actions confirma la publicación verde; actualiza la PWA abriéndola con conexión.
 
-## Publicación en GitHub Pages
-1. Abre https://github.com/new e inicia sesión con tu cuenta existente.
-2. Crea un repositorio público, por ejemplo `mi-recetario`.
-3. Descarga y DESCOMPRIME el ZIP. En el repositorio usa `Add file` > `Upload files` y sube **los archivos sueltos** de la carpeta (no subas el ZIP tal cual).
-4. En el repositorio: `Settings` > `Pages` > `Build and deployment` > `Deploy from a branch` > `main` > `/(root)` > `Save`.
-5. Cuando esté publicado, entra en `https://TU-USUARIO.github.io/mi-recetario/` (sustituye el nombre de usuario).
-6. En iPhone: Safari > Compartir > Añadir a pantalla de inicio. En Android: Chrome > Instalar.
+## Seguridad de datos
+- Base de datos IndexedDB: `mi-recetario-v1`, misma clave y mismos object stores que en versiones anteriores. Las recetas ya creadas no deberían eliminarse por actualizar archivos del sitio.
+- Guarda una copia en Configuración → Exportar copia completa **antes de subir esta versión**. No borres la PWA ni los datos de Safari.
+- Las copias automáticas a Google Drive aún NO están implementadas.
+- Las recetas eliminadas se mueven a Papelera y pueden restaurarse.
+- El almacenamiento de la PWA instalada en iOS y el de Safari pueden estar separados.
 
-## Muy importante sobre las recetas
-- **El almacenamiento sigue siendo local (IndexedDB).** No contiene todavía copias automáticas, ni intercambio individual, ni mejoras pendientes de la versión 1.3.
-- GitHub guarda el código, **no las recetas de los usuarios**.
-- Si ya tienes recetas en otra URL del prototipo, expórtalas antes desde Configuración y restaura el archivo en la web publicada.
-- Mantén la misma URL del repositorio: cambiar el dominio o el origen puede dejar las recetas locales inaccesibles desde la nueva ubicación.
-- No borres datos de Safari/Chrome ni desinstales la PWA sin copia externa reciente.
-
-## Actualizaciones
-Reemplaza archivos en el mismo repositorio. `sw.js` usa una nueva versión de caché para el icono actualizado.
+## Funciones
+- Múltiples fotos comprimidas, ingredientes por secciones, buscador predictivo, pasos con duración, temperatura e intensidad, utensilios, etiquetas, ajustes por comensales, copias manuales, intercambio de recetas.
+- Diseño responsive de escritorio y móvil, sin librerías externas de iconos ni fuentes.
