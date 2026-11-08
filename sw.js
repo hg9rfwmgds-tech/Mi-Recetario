@@ -1,5 +1,5 @@
-/* Mi Recetario 1.5 — shell sin conexión. IndexedDB no se modifica. */
-const CACHE='mi-recetario-shell-v1-5-espresso-20261108';
+/* Mi Recetario 1.5.1 — shell sin conexión. IndexedDB no se modifica. */
+const CACHE='mi-recetario-shell-v1-5-1-espresso-20261108';
 const REQUIRED=['./','./index.html','./manifest.webmanifest'];
 const OPTIONAL=['./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png','./favicon-32.png'];
 self.addEventListener('install',event=>{

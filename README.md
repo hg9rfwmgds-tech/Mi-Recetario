@@ -1,6 +1,24 @@
-# Mi Recetario · versión 1.5 · Diseño Espresso
+# Mi Recetario · versión 1.5.1 · Diseño Espresso
 
 **Novedades:** exportar una receta a PDF A4 real, descargable y compartible, y navegación corregida en iPhone horizontal. Conserva todo lo incorporado en la versión 1.4 (galería deslizante, fotos vinculadas a pasos, categorías de elaboración y utensilios con iconos precisos o texto).
+
+## Corrección urgente 1.5.1 — barra inferior en iPhone
+
+En la versión 1.5, el menú inferior utilizaba CSS `position:fixed`, una técnica
+que en algunas versiones de iOS/WebKit hace que la barra se desplace hacia el
+centro de la pantalla o tape los ingredientes al desplazarse.
+
+La versión 1.5.1 utiliza un **contenedor vertical flexible**: solo la zona de
+recetas tiene desplazamiento y el menú inferior queda fuera de ella, ocupando
+su espacio al pie de la pantalla. Ya no depende de `position:fixed` en iPhone.
+También se ha adaptado el reinicio del desplazamiento al cambiar de receta.
+
+La corrección se ha probado en navegador con tamaños de iPhone vertical y
+horizontal. **No se ha podido probar directamente en Safari/iPhone físico**.
+Si el iPhone sigue mostrando la versión 1.5, conecta a Internet, cierra
+por completo la PWA y vuelve a abrirla para permitir la actualización del
+service worker. **No desinstales la PWA ni borres datos**: las recetas están
+guardadas localmente.
 
 ## Actualizar en GitHub Pages
 
